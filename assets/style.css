@@ -77,20 +77,33 @@ a:hover {
   height: inherit;
 }
 
-@media only screen and (max-device-width: 736px) {
+@media only screen and (max-device-width: 414px) and (orientation: portrait) {
   h1 {
     font-size: 25px;
+    letter-spacing: 3px;
   }
   h2 {
     font-size: 15px;
     line-height: 22px;
-    margin-left: 55px;
-    margin-right: 55px;
   }
   h3 {
     font-size: 12px;
-    line-height: 20px;
-    margin-left: 55px;
-    margin-right: 55px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-device-width: 360px) and (orientation: portrait) {
+  h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+  }
+  h2 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  h3 {
+    font-size: 12px;
+    line-height: 22px;
   }
 }
